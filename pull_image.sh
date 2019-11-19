@@ -1,7 +1,7 @@
 # @Author: dongqing feng
 # @Date:   2019-11-19 09:45:24
 # @Last Modified by:   Holly
-# @Last Modified time: 2019-11-19 16:36:01
+# @Last Modified time: 2019-11-19 16:39:19
 
 #!/bin/bash
 set -e
@@ -36,7 +36,7 @@ images=(kube-apiserver:${KUBE_VERSION}
 
 for image_name in ${images[@]} ; do
 	docker pull $ALIYUN_REGISTRY/$image_name
-	docker tag $ALIYUN_REGISTRY/image_name $GCR_URL/$image_name
+	docker tag $ALIYUN_REGISTRY/$image_name $GCR_URL/$image_name
 	docker rmi $ALIYUN_REGISTRY/$image_name
 done
 
