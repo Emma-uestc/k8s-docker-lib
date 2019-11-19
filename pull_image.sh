@@ -1,7 +1,7 @@
 # @Author: dongqing feng
 # @Date:   2019-11-19 09:45:24
 # @Last Modified by:   Holly
-# @Last Modified time: 2019-11-19 11:29:00
+# @Last Modified time: 2019-11-19 16:08:17
 
 #!/bin/bash
 set -e
@@ -16,6 +16,7 @@ set -e
 #kube-proxy:v1.14.6
 #pause:3.1
 #coredns:1.3.1
+#etcd:3.3.10
 
 KUBE_VERSION=1.14.6
 KUBE_PAUSE_VERSION=3.1
